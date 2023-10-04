@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12pt;
+    font-weight: 400;
+    background-color: #F2F2F2;
+    padding: 15px 0;
+
+    p {
+        font-family: SonderRegular;
+        font-size: 20pt;
+        color: $dark-blue;
+        cursor: default;
+    }
+
+    .nav-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 25px;
+        border-radius: 50px;
+        text-transform: uppercase;
+
+        a {
+            margin: 0 15px;
+
+            &:hover {
+                text-shadow: 1px 1px 2px rgba($yellow, 0.8);
+            }
+
+            &:active {
+                text-shadow: none;
+                color: rgba($dark-blue, .5);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $dark-blue;
+    }
+
+    .contacts {
+        background-color: $dark-blue;
+        border-radius: 50px;
+        padding: 10px 25px;
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        &:hover {
+            box-shadow: 0px 0px 10px 1px rgba($yellow, .6);
+        }
+
+        &:active {
+            box-shadow: none;
+            color: rgba(white, .5);
+        }
+    }
+}

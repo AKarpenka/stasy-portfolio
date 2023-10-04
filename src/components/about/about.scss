@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 300;
+
+    .about-hey, .about-name {
+        font-family: SonderRegular;
+    }
+
+    .about-hey {
+        margin-bottom: 10px;
+        font-size: 28pt;
+    }
+
+    .about-name {
+        font-size: 54pt;
+    }
+
+    .about-specialization {
+        font-weight: 600;
+        margin-top: 40px;
+        font-size: 18pt;
+    }
+
+    .about-description {
+        margin-top: 20px;
+        font-size: 14pt;
+    }
+
+    .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            border-radius: 40px;
+            height: 500px;
+        }
+    }
+}

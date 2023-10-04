@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
+
+@font-face {
+  font-family: 'SonderRegular';
+  src: local('SonderRegular'), url(../fonts/SonderRegular.otf) format('opentype');
+}
+
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $dark-blue;
+}
+
+#root {
+  padding: 0 20px;
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  border-radius: 40px;
+  background-color: white;
+  padding: 80px;
+  margin-bottom: 20px;
+}
