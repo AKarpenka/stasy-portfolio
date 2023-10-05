@@ -21,14 +21,14 @@ const ProjectsSlider = ({projects}) => {
     const onPrev = () => {
         let idx = index - 1;
         if (idx === 0) {
-            setIndex(length - 4);
+            setIndex(length - 5);
         } else {
             setIndex(idx);
         }
     };
     
     const onNext = () => {
-        let idx = (index + 1) % (length - 3);
+        let idx = (index + 1) % (length - 4);
         if (idx === 0) {
             setIndex(1);
         } else {
@@ -50,7 +50,7 @@ const ProjectsSlider = ({projects}) => {
                 <div
                 className="slides"
                 style={{
-                    transform: `translateX(-${index * 220 - 220}px)`
+                    transform: `translateX(-${index * 240 - 240}px)`
                 }}
                 >
                     {list.map((project, idx, projectsList) => {
@@ -60,12 +60,32 @@ const ProjectsSlider = ({projects}) => {
                                     className="two-slides-wrapper"
                                     key={idx}
                                 >
-                                    <div className="slide" >
-                                        {project.title}
+                                    <div 
+                                        className="slide" 
+                                        style={{backgroundImage: `url(${project.image})`}}
+                                    >
+                                        <div className="slide-content">
+                                            <p className="slide-content-title">{project.title}</p>
+                                            <p className="slide-content-description">{project.description}</p>
+                                            <div className="slide-content-btns">
+                                                <a href={project.gitHubLink}>GitHub</a>
+                                                <a href={project.demoLink}>Demo</a>
+                                            </div>
+                                        </div>
                                     </div>
                                     {idx !== projectsList.length-2 &&
-                                        <div className="slide" >
-                                            {projectsList[idx+1]?.title}
+                                        <div 
+                                            className="slide" 
+                                            style={{backgroundImage: `url(${projectsList[idx+1]?.image})`}}
+                                        >
+                                            <div className="slide-content">
+                                                <p className="slide-content-title">{projectsList[idx+1]?.title}</p>
+                                                <p className="slide-content-description">{projectsList[idx+1]?.description}</p>
+                                                <div className="slide-content-btns">
+                                                    <a href={projectsList[idx+1]?.gitHubLink}>GitHub</a>
+                                                    <a href={projectsList[idx+1]?.demoLink}>Demo</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     }
                                 </div>

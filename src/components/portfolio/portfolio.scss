@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.portfolio-title {
+    font-family: SonderRegular;
+    font-size: 28pt;
+    color: $dark-blue;
+    margin-bottom: 10px;
+}
+
+.portfolio-description {
+    font-size: 14pt;
+    font-weight: 300;
+    margin: 10px 0;
+}
