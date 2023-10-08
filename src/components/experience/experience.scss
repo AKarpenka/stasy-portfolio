@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.experience-title {
+    font-family: SonderRegular;
+    font-size: 28pt;
+    color: $dark-blue;
+    margin-bottom: 40px;
+}
+
+hr {
+    margin: 40px 0;
+    border: 1px solid rgba($dark-blue, .08);
+}

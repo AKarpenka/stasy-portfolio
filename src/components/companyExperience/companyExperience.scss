@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+
+.company {
+    display: flex;
+    width: 100%;
+    font-size: 14pt;
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .company-content {
+        margin: 0 25px;
+        width: 100%;
+
+        .company-general-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .company-name {
+                font-weight: 600px;
+                font-size: 14pt;
+                color: $dark-blue;
+                text-decoration: none;
+
+                &:hover {
+                    text-shadow: 1px 1px 2px rgba($yellow, 0.8);
+                }
+
+                &:active {
+                    text-shadow: none;
+                    color: rgba($dark-blue, .5);
+                }
+            }
+        }
+
+        .date {
+            font-size: 12pt;
+            color: rgba($dark-blue, .7);
+        }
+
+        .position {
+            font-size: 14pt;
+        }
+
+        .description {
+            margin: 20px 0;
+        }
+
+        .skills {
+            display: flex;
+            font-size: 12pt;
+
+            p:first-child {
+                font-weight: 600;
+                margin-right: 10px;
+                padding-top: 15px;
+            }
+            
+            .skill {
+                display: flex;
+                flex-wrap: wrap;
+
+                p {
+                    margin: 10px 10px 0 0;
+                    font-weight: 500;
+                    background-color: rgba($dark-blue, 0.1);
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                }
+            }
+            
+        }
+
+        .collapse-btn {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .company-projects {
+            margin-left: 25px;
+        }
+
+        
+    }
+
+}
