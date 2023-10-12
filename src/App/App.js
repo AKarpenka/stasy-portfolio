@@ -6,6 +6,7 @@ import Portfolio from '../components/portfolio/portfolio';
 import Experience from '../components/experience/experience';
 import Education from '../components/education/education';
 import EducationCertificates from '../components/educationCertificates/educationCertificates';
+import Contacts from '../components/contacts/contacts';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Experience />
       <Education />
       <EducationCertificates />
-      {/* contacts */}
+      <Contacts />
       {/* download cv */}
       {/* hobby */}
     </div>

@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.container.dark {
+    background-color: $dark-blue;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 80px;
+    font-size: 14pt;
+    display: flex;
+    flex-direction: column;
+
+    .contacts-title {
+        font-family: SonderRegular;
+        font-size: 28pt;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 40px;
+    }
+
+    .icon {
+        margin-right: 10px;
+        font-size: 18pt;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.9);
+        margin-top: 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .email {
+        margin-top: 40px;
+    }
+
+    .email, a {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+    }
+}
