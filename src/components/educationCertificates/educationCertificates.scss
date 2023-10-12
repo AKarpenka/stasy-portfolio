@@ -1,0 +1,92 @@
+@import '../../styles/variables.scss';
+
+.certificates-title {
+    font-family: SonderRegular;
+    font-size: 28pt;
+    color: $dark-blue;
+    margin-bottom: 40px;
+}
+
+.certificate {
+    font-size: 14pt;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .certificate-content {
+        align-self: center;
+
+        .certificate-title {
+            font-weight: 600;
+        }
+
+        .credentialId {
+            font-size: 12pt;
+            color: rgba($dark-blue, .7);
+            margin-top: 10px;
+        }
+
+        .skills {
+            display: flex;
+            font-size: 12pt;
+            margin-bottom: 30px;
+
+            p:first-child {
+                font-weight: 600;
+                margin-right: 10px;
+                padding-top: 15px;
+            }
+            
+            .skill {
+                display: flex;
+                flex-wrap: wrap;
+
+                p {
+                    margin: 10px 10px 0 0;
+                    font-weight: 500;
+                    background-color: rgba($dark-blue, 0.1);
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        a {
+            border-radius: 25px;
+            border: 1px solid $dark-blue;
+            padding: 5px 20px;
+            color: $dark-blue;
+            text-decoration: none;
+            transition: all 0.1s ease-in-out;
+
+            .link-icon {
+                margin-left: 5px;
+                color: $dark-blue;
+                transition: all 0.1s ease-in-out;
+            }
+
+            &:hover {
+                background-color: $dark-blue;
+                color: white;
+
+                .link-icon {
+                    color: white;
+                }
+            }
+
+            &:active {
+                background-color: $dark-blue;
+                color: rgba(255, 255, 255, 0.5);
+
+                .link-icon {
+                    color: rgba(255, 255, 255, 0.5);;
+                }
+            }
+        }
+    }
+}
+
+hr {
+    margin: 40px 0;
+    border: 1px solid rgba($dark-blue, .08);
+}

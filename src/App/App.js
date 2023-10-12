@@ -5,6 +5,7 @@ import Technologies from '../components/technologies/technologies';
 import Portfolio from '../components/portfolio/portfolio';
 import Experience from '../components/experience/experience';
 import Education from '../components/education/education';
+import EducationCertificates from '../components/educationCertificates/educationCertificates';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Portfolio />
       <Experience />
       <Education />
-      {/* sertificats */}
+      <EducationCertificates />
       {/* contacts */}
       {/* download cv */}
       {/* hobby */}
