@@ -1,8 +1,10 @@
 import './about.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const  About = () =>  {
     return (
-        <div className="container">
+        <div className="container" id="about">
             <div className="about">
                 <p className="about-hey">Hey There!</p>
                 <span></span>
@@ -15,9 +17,13 @@ const  About = () =>  {
                         <br /><br />► Experienced in working both individually and in a large international team.
                         <br /><br />► In love with cats and programming.
                     </p>
+                    <a href="/CV_Anastasiya_Karpenka_With_Projects.pdf" download className="black-btn">
+                        Download CV 
+                        <FontAwesomeIcon icon={faDownload} className="icon" />
+                    </a>
                 </div>
                 <div className="about-image">
-                    <img src="/photo_5253545009842605933_y.jpg" />
+                    <img src="/images/me.jpg" />
                 </div>
             </div>
         </div>

@@ -1,62 +1,11 @@
 import './portfolio.scss';
 import ProjectsSlider from '../projectsSlider/projectsSlider';
-
-const projects = [
-    {
-        title: 'project 1',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: 'photo_5253545009842605933_y.jpg'
-    },
-    {
-        title: 'project 2',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: ''
-    },
-    {
-        title: 'project 3',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: ''
-    },
-    {
-        title: 'project 4',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: ''
-    },
-    {
-        title: 'project 5',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: ''
-    },
-    {
-        title: 'project 6',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: ''
-    },
-    {
-        title: 'project 7',
-        description: 'qwertyfsdfsdfsdf',
-        gitHubLink: '',
-        demoLink: '',
-        image: ''
-    },
-];
+import { projects } from '../../data/projects';
 
 const Portfolio = () => {
     return (
-        <div className="container">
-            <p className="portfolio-title">Portfolio</p>
+        <div className="container" id="portfolio">
+            <p className="title portfolio">Portfolio</p>
             <p className="portfolio-description">
                 Here you can see some of my successfully completed projects. 
                 Both commercial projects and my personal pet-projects are presented here.

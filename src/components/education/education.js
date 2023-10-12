@@ -1,23 +1,11 @@
 import './education.scss';
 import Moment from 'react-moment';
-
-const education = [
-    {
-        id: 1,
-        uniName: 'Francisk Skorina Gomel Sate University',
-        uniLogo: '/images/uni/GSU.jpg',
-        faculty: 'Physics and Information Technologies', 
-        department: 'Automated Information Processing Systems',
-        grade: "Bachelor's degree with honors as a software engineer",
-        startDate: 'September 1, 2015',
-        endDate: 'June 1, 2019'
-    }
-]
+import { education } from '../../data/education';
 
 const Education = () => {
     return (
-        <div className="container">
-            <p className="education-title">Education</p>
+        <div className="container" id="education">
+            <p className="title education">Education</p>
             {
                 education.reverse().map(({id, uniName, uniLogo, faculty, department, grade, startDate, endDate}) => {
                     const dateStart = new Date(startDate);

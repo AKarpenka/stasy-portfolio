@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import './projectsSlider.scss';
 
-
 const ProjectsSlider = ({projects}) => {
     const [index, setIndex] = useState(1);
     const [length, setLength] = useState(projects.length);

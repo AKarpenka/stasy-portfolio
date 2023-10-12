@@ -5,8 +5,8 @@ import { faLinkedin, faGithub, faTelegram, faInstagram, faSquareXTwitter } from 
 
 const Contacts = () => {
     return (
-        <div className="container contacts">
-            <p className="contacts-title">Contacts</p>
+        <div className="container contacts" id="contacts">
+            <p className="title contacts">Contacts</p>
             <p>Let&apos;s stay in touch!</p>
             <p>I&apos;m open to new offers, you can find me here:</p>
             <p className="email"><FontAwesomeIcon icon={faEnvelope} className="icon" /> knesty@yandex.by</p>
@@ -24,7 +24,7 @@ const Contacts = () => {
             </a>
             <a href="https://instagram.com/stasy.karpenka" target='_blank' rel="noreferrer" >
                 <FontAwesomeIcon icon={faInstagram} className="icon" />
-                stasy.karpenka
+                @stasy.karpenka
             </a>
             <a href="https://twitter.com/stasyKarpenka" target='_blank' rel="noreferrer" >
                 <FontAwesomeIcon icon={faSquareXTwitter} className="icon" />
@@ -32,7 +32,7 @@ const Contacts = () => {
             </a> 
             <a href="https://dribbble.com/stasyKarpenka" target='_blank' rel="noreferrer" >
                 <FontAwesomeIcon icon={faBasketball} className="icon" />
-                stasyKarpenka
+                @stasyKarpenka
             </a>
         </div>
     )

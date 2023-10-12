@@ -1,15 +1,18 @@
 import './header.scss';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return (
         <header>
             <p>Anastasiya Karpenka</p>
             <nav className="nav-btns">
-                <a href="">about</a>
-                <a href="">portfolio</a>
-                <a href="">experience</a>
+                <Link to="/#about">about</Link>
+                <Link to="/#portfolio">portfolio</Link>
+                <Link to="/#experience">experience</Link>
+                <Link to="/#education">education</Link>
+                <Link to="/#certificates">certificates</Link>
             </nav>
-            <a href="" className="contacts">contacts</a>
+            <Link to="/#contacts" className="black-btn">contacts</Link>
         </header>
     )
 }
