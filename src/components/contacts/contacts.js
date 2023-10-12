@@ -5,7 +5,7 @@ import { faLinkedin, faGithub, faTelegram, faInstagram, faSquareXTwitter } from 
 
 const Contacts = () => {
     return (
-        <div className="container dark">
+        <div className="container contacts">
             <p className="contacts-title">Contacts</p>
             <p>Let&apos;s stay in touch!</p>
             <p>I&apos;m open to new offers, you can find me here:</p>
