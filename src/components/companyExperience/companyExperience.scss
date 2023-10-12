@@ -8,7 +8,7 @@
     img {
         width: 60px;
         height: 60px;
-        border-radius: 10px;
+        border-radius: 13px;
     }
 
     .company-content {
@@ -21,7 +21,7 @@
             align-items: center;
 
             .company-name {
-                font-weight: 600px;
+                font-weight: 600;
                 font-size: 14pt;
                 color: $dark-blue;
                 text-decoration: none;
@@ -47,6 +47,7 @@
         }
 
         .description {
+            font-size: 12pt;
             margin: 20px 0;
         }
 
@@ -76,15 +77,55 @@
         }
 
         .collapse-btn {
+            display: flex;
+            align-items: center;
             margin: 20px 0;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: 1px underline $dark-blue;
+            }
+                
+            .triangle{
+                stroke: $dark-blue;
+                fill: $dark-blue;
+                margin-right: 7px;
+            }
         }
 
         .company-projects {
-            margin-left: 25px;
+            margin-left: 20px;
+
+            .project {
+                display: grid;
+                grid-template-columns: 10px 1fr;
+
+                .project-point {
+                    display: flex;
+                    align-items: center;
+                    
+                    span {
+                        margin-left: -4px;
+                        color: rgba($dark-blue, 0.2);
+                    }
+                }
+
+                .project-border {
+                    border-left: 1px solid rgba($dark-blue, .2);
+                }
+
+                .project-content {
+                    padding-left: 20px;
+
+                    .project-name {
+                        font-weight: 600;
+                    }
+
+                    .skill {
+                        padding-bottom: 40px;
+                    }
+                }
+            }
         }
-
-        
     }
-
 }

@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import './companyExperience.scss';
 import Moment from 'react-moment';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const CompayExperience = ({company, isLastProject}) => {
     const {companyName, companyLink, companyImg, position, startDate, endDate, description, skills, projects} = company;
@@ -53,7 +55,7 @@ const CompayExperience = ({company, isLastProject}) => {
                         href={companyLink} 
                         target='_blank'
                         className="company-name" 
-                        style={{fontWeight:'600'}} rel="noreferrer"
+                        rel="noreferrer"
                     >
                         {companyName}
                     </a>
@@ -69,19 +71,38 @@ const CompayExperience = ({company, isLastProject}) => {
                 {
                     projects.length > 0 && 
                     <>
-                        <p className="collapse-btn" onClick={toggleOpenProjects} >See Details...</p>
+                        <p className="collapse-btn" onClick={toggleOpenProjects} >
+                            {showProjects ? 
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="triangle" width='10' height='10'>
+                                    <polygon points="5,10 0,0 10,0"/>
+                                </svg> :
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="triangle" width='10' height='10'>
+                                    <polygon points="10,5 0,10 0,0"/>
+                                </svg>
+                            }
+                            Details
+                        </p>
                         {showProjects &&
                             <div className="company-projects">
-                                {projects?.map(({projectId, projectPosition, projectName, startDate, endDate, description, skills}) => {
+                                {projects?.reverse().map(({projectId, projectPosition, projectName, startDate, endDate, description, skills}) => {
                                     return(
                                         <div key={projectId} className="project">
-                                            <p className="project-name">{projectName}</p>
-                                            <p className="position">{projectPosition}</p>
-                                            {renderWorkingTime(startDate, endDate)}
-                                            <div className="description">
-                                                {description?.map((item, index) => (<p key={index}>{item}</p>))}
+                                            <div className="project-point">
+                                                <span><FontAwesomeIcon icon={faCircle} width={"10px"} /></span>
                                             </div>
-                                            {skills.length > 0 && renderSkills(skills)}
+                                            <div className="project-content">
+                                                <p className="project-name">{projectName}</p>
+                                                <p className="position">{projectPosition}</p>
+                                                {renderWorkingTime(startDate, endDate)}
+                                            </div>
+
+                                            <div className="project-border"></div>
+                                            <div className="project-content">
+                                                <div className="description">
+                                                    {description?.map((item, index) => (<p key={index}>{item}</p>))}
+                                                </div>
+                                                {skills.length > 0 && renderSkills(skills)}
+                                            </div>
                                         </div>
                                     )
                                 })}
