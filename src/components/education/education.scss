@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.education-title {
+    font-family: SonderRegular;
+    font-size: 28pt;
+    color: $dark-blue;
+    margin-bottom: 40px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    font-size: 14pt;
+    color: $dark-blue;
+
+    .education-content {
+        padding-left: 20px;
+
+        .uni-title {
+            font-weight: 600;
+        }
+
+        .date {
+            color: rgba($dark-blue, .7);
+            margin-bottom: 10px;
+        }
+    }
+}
