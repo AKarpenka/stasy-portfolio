@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.scroll-up-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    background-color: rgba($dark-blue, 0.5);
+    color: rgba(white, 0.8);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $dark-blue;
+        color: white;
+    }
+}

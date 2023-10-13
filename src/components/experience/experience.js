@@ -7,10 +7,10 @@ const Experience = () => {
         <div className="container" id="experience">
             <p className="title experience">Work Experience</p>
             {companies.reverse().map((company) => (
-                <>
-                   <CompayExperience key={company.id} company={company} isLastProject={company.id === companies.length ? true : false} />
+                <div key={company.id}>
+                   <CompayExperience company={company} isLastProject={company.id === companies.length ? true : false} />
                     {company.id !== 1 && <hr/>} 
-                </>
+                </div>
             ))}
         </div>
     )

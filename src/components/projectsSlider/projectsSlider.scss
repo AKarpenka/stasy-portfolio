@@ -30,7 +30,6 @@
                 margin: 20px 0;
                 border-radius: 25px;
                 color: white;
-                cursor: pointer;
                 background-size: cover;
                 background-repeat: no-repeat;
 
@@ -70,6 +69,7 @@
                         justify-content: space-between;
                         font-size: 12pt;
                         line-height: 13pt;
+                        cursor: pointer;
 
                         a {
                             text-decoration: none;

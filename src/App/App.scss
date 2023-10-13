@@ -1,6 +1,16 @@
+@import '../styles/variables.scss';
+
 .App {
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   width: 100%;
   max-width: 1200px;
+  position: relative;
+
+  footer {
+    font-size: 10pt;
+    color: rgba($dark-blue, .7);
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }

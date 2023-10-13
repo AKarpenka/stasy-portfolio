@@ -72,14 +72,9 @@ const CompayExperience = ({company, isLastProject}) => {
                     projects.length > 0 && 
                     <>
                         <p className="collapse-btn" onClick={toggleOpenProjects} >
-                            {showProjects ? 
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="triangle" width='10' height='10'>
-                                    <polygon points="5,10 0,0 10,0"/>
-                                </svg> :
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="triangle" width='10' height='10'>
-                                    <polygon points="10,5 0,10 0,0"/>
-                                </svg>
-                            }
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="triangle" width='10' height='10'>
+                                <polygon points={showProjects ? "5, 10 0, 0 10, 0" : "10, 5 0, 10 0, 0"}/>
+                            </svg>
                             Details
                         </p>
                         {showProjects &&
@@ -109,7 +104,6 @@ const CompayExperience = ({company, isLastProject}) => {
                             </div> 
                         }
                     </>
-                   
                 }
             </div>
         </div>

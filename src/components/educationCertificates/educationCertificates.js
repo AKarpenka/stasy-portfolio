@@ -10,8 +10,8 @@ const EducationCertificates = () => {
             {
                 certificates.reverse().map(({id, name, issuingOrganization, credentialId, credentialURL, img, skills}) => {
                     return (
-                        <>
-                            <div key={id} className="certificate">
+                        <div key={id}>
+                            <div className="certificate">
                                 <img src={img} alt="image of certificate" width={'500px'} />
                                 <div className="certificate-content">
                                     <p className="certificate-title">{name}</p>
@@ -34,7 +34,7 @@ const EducationCertificates = () => {
                                 </div>
                             </div>
                             {id !== 1 && certificates.length > 1 && <hr/>} 
-                        </>
+                        </div>
                     )
                 })
             }
