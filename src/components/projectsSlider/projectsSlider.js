@@ -17,17 +17,17 @@ const ProjectsSlider = ({projects}) => {
 
     const [listProjects, setListProjects] = useState(() => processProjects(projects));
 
-    const onPrev = () => {
+    const onPrev = (size) => {
         let idx = index - 1;
         if (idx === 0) {
-            setIndex(length - 5);
+            size === 'lg' ? setIndex(length - 5) : setIndex(length - 3);
         } else {
             setIndex(idx);
         }
     };
     
-    const onNext = () => {
-        let idx = (index + 1) % (length - 4);
+    const onNext = (size) => {
+        let idx = size === 'lg' ? ((index + 1) % (length - 4)) : ((index + 1) % (length - 2));
         if (idx === 0) {
             setIndex(1);
         } else {
@@ -35,12 +35,12 @@ const ProjectsSlider = ({projects}) => {
         }
     };
 
-    const renderPrevButton = () => {
-        return <div className="arrow arrow-left" onClick={onPrev}></div>;
+    const renderPrevButton = (size) => {
+        return <div className={`arrow arrow-left ${size}`} onClick={() => onPrev(size)}></div>;
     };
 
-    const renderNextButton = () => {
-        return <div className="arrow arrow-right" onClick={onNext}></div>;
+    const renderNextButton = (size) => {
+        return <div className={`arrow arrow-right ${size}`} onClick={() => onNext(size)}></div>;
     };
 
     const renderSlides = (list) => {
@@ -98,9 +98,11 @@ const ProjectsSlider = ({projects}) => {
 
     return (
         <div className="carousel">
-            {renderPrevButton()}
+            {renderPrevButton('lg')}
+            {renderPrevButton('md')}
             {renderSlides(listProjects)}
-            {renderNextButton()}
+            {renderNextButton('lg')}
+            {renderNextButton('md')}
         </div>
     )
 }

@@ -105,6 +105,14 @@
             color: rgba(0, 0, 0, 1);
         }
     }
+
+    .arrow.lg {
+        display: block;
+    }
+
+    .arrow.md {
+        display: none;
+    }
     
     .arrow-left {
         justify-self: flex-start;
@@ -114,5 +122,28 @@
     .arrow-right {
         justify-self: flex-end;
         transform: rotate(135deg);
+    }
+}
+
+@media (max-width: 1075px) {
+    .carousel {
+        grid-template-columns: 30px 240px 30px;
+
+        .arrow.lg {
+            display: none;
+        }
+    
+        .arrow.md {
+            display: block;
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+        }
+
+        .arrow-left {
+            margin: 5px;
+        }
     }
 }
