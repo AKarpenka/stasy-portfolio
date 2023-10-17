@@ -45,12 +45,97 @@
 
     .about-image {
         width: 100%;
-        display: flex;
         justify-content: center;
 
         img {
             border-radius: 40px;
             height: 500px;
+        }
+    }
+
+    .about-image.lg {
+        display: flex;
+    }
+
+    .about-image.md {
+        display: none;
+    }
+}
+
+@media (max-width: 1075px) {
+    .about {
+
+        .about-hey {
+            font-size: 24pt;
+        }
+    
+        .about-name {
+            font-size: 42pt;
+        }
+
+        .about-image {
+            margin-left: 10px;
+            align-items: flex-end;
+    
+            img {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+
+        .about-hey, .about-name, .about-specialization {
+            text-align: center;
+        }
+
+        .about-hey {
+            font-size: 22pt;
+        }
+    
+        .about-name {
+            font-size: 36pt;
+        }
+
+        .about-image.lg {
+            display: none;
+        }
+
+        .about-image.md {
+            display: flex;
+            margin-top: 40px;
+
+            img {
+                height: 300px;
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .about {
+        .about-hey {
+            font-size: 18pt;
+        }
+    
+        .about-name {
+            font-size: 24pt;
+        }
+
+        .about-image.md {
+            img {
+                border-radius: 20px;
+                height: 200px;
+            }
         }
     }
 }

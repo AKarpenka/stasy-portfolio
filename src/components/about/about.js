@@ -3,13 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const  About = () =>  {
+    const renderImg = (size) => (
+        <div className={`about-image ${size}`}>
+            <img src="/images/me.jpg" />
+        </div>
+    );
+
     return (
         <div className="container" id="about">
             <div className="about">
                 <p className="about-hey">Hey There!</p>
                 <span></span>
                 <div>
-                    <p className="about-name">I&apos;m Anastasiya <br /> Karpenka</p>
+                    <p className="about-name">I&apos;m Anastasiya Karpenka</p>
+                    {renderImg('md')}
                     <p className="about-specialization">Frontend/Full-stack Developer</p>
                     <ul className="about-description">
                         <li>► 4+ years of experience working on commercial projects.</li>
@@ -22,9 +29,7 @@ const  About = () =>  {
                         <FontAwesomeIcon icon={faDownload} className="icon" />
                     </a>
                 </div>
-                <div className="about-image">
-                    <img src="/images/me.jpg" />
-                </div>
+                {renderImg('lg')}
             </div>
         </div>
     )
