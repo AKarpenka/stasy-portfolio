@@ -48,10 +48,11 @@ const CompayExperience = ({company, isLastProject}) => {
 
     return (
         <div className="company">
-            <img src={companyImg} alt="" />
+            <img src={companyImg} alt="company logo" className="lg" />
             <div className="company-content">
                 <div className="company-general-info">
-                     <a 
+                    <img src={companyImg} alt="company logo" className="md" />
+                    <a 
                         href={companyLink} 
                         target='_blank'
                         className="company-name" 

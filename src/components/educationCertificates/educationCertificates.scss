@@ -10,6 +10,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    img {
+        width: 500px;
+    }
+
     .certificate-content {
         align-self: center;
 
@@ -86,4 +90,32 @@
 hr {
     margin: 40px 0;
     border: 1px solid rgba($dark-blue, .08);
+}
+
+@media (max-width: 970px) {
+    .certificates {
+        margin-bottom: 20px;
+    }
+
+    .certificate {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        img {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .certificate-content {
+            word-wrap: break-word;
+            align-self: flex-start;
+            margin-left: 10px;
+        }
+    }
+
+    hr {
+        margin: 20px 0;
+    }
 }

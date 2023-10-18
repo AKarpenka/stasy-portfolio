@@ -12,7 +12,7 @@ const EducationCertificates = () => {
                     return (
                         <div key={id}>
                             <div className="certificate">
-                                <img src={img} alt="image of certificate" width={'500px'} />
+                                <img src={img} alt="image of certificate" />
                                 <div className="certificate-content">
                                     <p className="certificate-title">{name}</p>
                                     <p>{issuingOrganization}</p>

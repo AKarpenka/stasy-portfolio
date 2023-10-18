@@ -4,7 +4,22 @@
     margin-bottom: 40px;
 }
 
-hr {
-    margin: 40px 0;
-    border: 1px solid rgba($dark-blue, .08);
+#experience {
+    hr {
+        margin: 40px 0;
+        border: 1px solid rgba($dark-blue, .08);
+    }
+}
+
+@media (max-width: 870px) {
+    .experience {
+        margin-bottom: 20px;
+    }
+
+    #experience {
+        hr {
+            margin: 20px 0;
+        }
+    }
+    
 }

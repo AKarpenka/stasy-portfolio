@@ -11,6 +11,14 @@
         border-radius: 13px;
     }
 
+    img.md {
+        display: none;
+    }
+
+    img.lg {
+        display: block;
+    }
+
     .company-content {
         margin: 0 25px;
         width: 100%;
@@ -127,5 +135,40 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 870px) {
+    .company {
+        flex-direction: column;
+
+        img.md {
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+
+        img.lg {
+            display: none;
+        }
+
+        .company-content {
+            margin: 10px 0;
+
+            .company-general-info {
+                margin-bottom: 10px;
+                display: block;
+                min-height: 60px;
+
+                a, span {
+                    display: block;
+                }
+
+                a {
+                    padding-top: 10px;
+                }
+            }
+        }
+        
     }
 }

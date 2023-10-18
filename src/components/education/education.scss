@@ -23,3 +23,21 @@
         }
     }
 }
+
+@media (max-width: 870px) {
+    .education {
+        margin-bottom: 20px;
+    }
+
+    .education-container {
+        .education-content {
+            p {
+                margin-bottom: 10px;
+            }
+
+            .date {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
