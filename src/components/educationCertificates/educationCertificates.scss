@@ -119,3 +119,23 @@ hr {
         margin: 20px 0;
     }
 }
+
+@media (max-width: 512px) {
+    .certificate {
+        font-size: 12pt;
+
+        .certificate-content {
+           .credentialId {
+                font-size: 10pt;
+            }
+
+            .skills {
+                font-size: 10pt;
+            } 
+
+            a {
+                font-size: 10pt;
+            }
+        }
+    }
+}

@@ -172,3 +172,63 @@
         
     }
 }
+
+@media (max-width: 512px) {
+    .company {
+        font-size: 12pt;
+
+        .company-content {
+            .company-general-info {
+                .company-name {
+                    font-size: 12pt;
+                }
+
+                .date {
+                    font-size: 10pt;
+                }
+            }
+            .position {
+                font-size: 12pt;
+            }
+    
+            .description {
+                font-size: 12pt;
+            }
+
+            .skills {
+                font-size: 12pt;
+            }
+
+            .collapse-btn {
+                font-size: 12pt;
+            }
+
+            .company-projects {
+                .project {
+                    font-size: 10pt;
+                    .project-content {
+                        .project-name {
+                            font-size: 10pt;
+                        }
+
+                        .position {
+                            font-size: 10pt;
+                        }
+
+                        .date {
+                            font-size: 10pt;
+                        }
+
+                        .description {
+                            font-size: 10pt;
+                        }
+    
+                        .skill {
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

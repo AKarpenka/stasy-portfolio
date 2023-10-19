@@ -26,10 +26,10 @@ body {
 
 #root {
   padding: 0 20px;
-    background-color: #F2F2F2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  background-color: #F2F2F2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -68,5 +68,13 @@ body {
   .container {
     border-radius: 20px;
     padding: 30px 15px;
+  }
+
+  .black-btn {
+    font-size: 10pt;
+  }
+
+  .title {
+    font-size: 20pt;
   }
 }

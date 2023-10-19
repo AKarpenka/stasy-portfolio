@@ -13,7 +13,7 @@ const Education = () => {
 
                     return (
                         <div key={id} className="education-container" >
-                            <img src={uniLogo} alt="Univercity Logo" width={'70px'} />
+                            <img src={uniLogo} alt="Univercity Logo" />
                             <div className="education-content">
                                 <p className="uni-title">{uniName}</p>
                                 <p>Faculty: {faculty}</p>

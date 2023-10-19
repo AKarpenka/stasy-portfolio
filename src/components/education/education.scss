@@ -10,6 +10,10 @@
     font-size: 14pt;
     color: $dark-blue;
 
+    img {
+        width: 70px;
+    }
+
     .education-content {
         padding-left: 20px;
 
@@ -38,6 +42,21 @@
             .date {
                 margin-bottom: 30px;
             }
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .education-container {
+        font-size: 12pt;
+        grid-template-columns: 50px 1fr;
+
+        img {
+            width: 50px;
+        }
+
+        .education-content {
+            padding-left: 10px;
         }
     }
 }

@@ -9,3 +9,9 @@
     font-weight: 300;
     margin: 10px 0;
 }
+
+@media (max-width: 512px) {
+    .portfolio-description {
+        font-size: 12pt;
+    }
+}
