@@ -20,17 +20,24 @@
         margin-top: 15px;
 
         a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             text-decoration: none;
             color: rgba(255, 255, 255, 0.9);
 
-            &:hover {
-                text-decoration: underline;
+            span {
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         } 
     }
 
     .email {
         margin-top: 40px;
+        display: flex;
+        align-items: center;
     }
 }
 
