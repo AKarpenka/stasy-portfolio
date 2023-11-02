@@ -17,7 +17,7 @@ export const projects = [
         title: '(Pet) Watermarks On Photos',
         description: 'Pure JS. The app to upload up to 9 photos and add a watermark to them.',
         gitHubLink: 'https://github.com/AKarpenka/adding-watermarks-js',
-        demoLink: 'https://akarpenka.github.io/adding-watermarks-js/',
+        demoLink: 'https://adding-watermarks.vercel.app',
         image: '/images/projects/watermarks_pet.jpg'
     },
     {
