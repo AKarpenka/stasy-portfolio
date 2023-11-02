@@ -20,11 +20,11 @@ export const projects = [
         demoLink: 'https://akarpenka.github.io/adding-watermarks-js/',
         image: '/images/projects/watermarks_pet.jpg'
     },
-    // {
-    //     title: '(Pet) Employee Accounting App',
-    //     description: 'A pure React application that implements adding employees, changing their data and deleting them, as well as filtering and searching.',
-    //     gitHubLink: 'https://github.com/AKarpenka/EmployeeAccounting',
-    //     demoLink: 'https://employee-accounting-gilt.vercel.app',
-    //     image: '/images/projects/employee_pet.png'
-    // }
+    {
+        title: '(Pet) Employee Accounting App',
+        description: 'A pure React application that implements adding employees, changing their data and deleting them, as well as filtering and searching.',
+        gitHubLink: 'https://github.com/AKarpenka/EmployeeAccounting',
+        demoLink: 'https://employee-accounting-gilt.vercel.app',
+        image: '/images/projects/employee_pet.png'
+    }
 ];
